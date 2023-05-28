@@ -158,9 +158,6 @@
   position: absolute;
   bottom: 10%;
 }
-.about_team .team_people .team_bg .overlay .team_socail:last-child {
-  margin-bottom: -80px;
-}
 .about_team .team_people .team_bg .overlay .team_socail a {
   color: white;
   font-size: 20px;
