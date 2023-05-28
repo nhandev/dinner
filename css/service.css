@@ -194,6 +194,8 @@ input:checked + .mode-container i.gg-moon {
   gap: 40px;
 }
 .sv_opsion .icon i {
+  width: 70px;
+  height: 70px;
   padding: 20px;
   text-align: center;
   background-color: #8273fc0d;
@@ -240,10 +242,12 @@ input:checked + .mode-container i.gg-moon {
 }
 .sv_banner .banner_title h2 {
   font-size: 45px;
-  font-weight: 600;
+  font-weight: bold;
   line-height: 50px;
   padding: 70px 0 50px 0;
-  max-width: 100%;
+  max-width: 600px;
+  color: white;
+  margin-left: 350px;
 }
 .sv_banner .banner_button button {
   font-size: 20px;
@@ -810,6 +814,11 @@ button#trigger-overlay {
   .banner_title .titlebn {
     padding: auto;
   }
+  .sv_banner .banner_title h2 {
+    margin-left: 190px;
+    font-size: 40px;
+    font-weight: 600;
+  }
 }
 @media screen and (max-width: 768px) {
   .sv_banner {
@@ -820,8 +829,9 @@ button#trigger-overlay {
     font-size: 15px;
   }
   .sv_banner .banner_title h2 {
-    font-size: 35px;
-    padding: 20px 0;
+    font-size: 40px;
+    padding: 40px 0;
+    margin-left: 65px;
   }
   .banner_button {
     padding-bottom: 50px;
@@ -833,11 +843,13 @@ button#trigger-overlay {
   }
   .sv_banner .banner_button button {
     padding: 15px 30px;
+    font-size: 20px;
   }
   .sv_banner .banner_title h2 {
-    font-size: 25px;
-    line-height: 30px;
-    padding: 30px 0 20px 0;
+    font-size: 35px;
+    line-height: 40px;
+    padding: 30px 0 50px 0;
+    margin-left: 30px;
   }
   .service_menu .menu_item h4 {
     font-size: 18px;
