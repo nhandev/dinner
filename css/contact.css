@@ -133,7 +133,10 @@
 }
 @media only screen and (max-width:575px){
     .contact{
-        margin: 0 -60px;
+        margin: 0;
+    }
+    .contact_top, .contact_bottom {
+      padding: 0;
     }
     .contact_top p{
         font-size: 10px;

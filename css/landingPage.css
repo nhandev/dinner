@@ -1,0 +1,14 @@
+.about_team .team_people .team_bg .overlay {
+    position: static;
+}
+
+.contact_bottom .content_itemlist .content_item .icon {
+    margin-left: 0;
+}
+.contact_bottom .content_itemlist .content_item .item_text {
+    margin-left: 0;
+}
+
+.contact .contact_map {
+    margin: 0;
+}
