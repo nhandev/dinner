@@ -588,6 +588,7 @@ button#trigger-overlay {
 	color: #fff;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
+  line-height: 3em;
 }
 
 .overlay ul li a:hover,
