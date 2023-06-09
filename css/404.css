@@ -10,7 +10,7 @@
 .erro_page .erro h1 {
   font-size: 130px;
   font-weight: bold;
-  color: #232121;
+  color: var(--color-blog);
   letter-spacing: 5px;
 }
 .erro_page .erro .ic_smile {
@@ -20,14 +20,14 @@
   font-size: 28px;
   margin-bottom: 10px;
   font-weight: 600;
-  color: #232121;
+  color: var(--color-blog);
 }
 .erro_page .erro p {
   margin-top: 25px;
   font-family: "Quicksand", sans-serif;
   font-size: 18px;
   line-height: 28px;
-  color: rgb(22 28 45 / 70%);
+  color: var(--card-a);
 }
 .erro input {
   font-size: 18px;
@@ -65,14 +65,14 @@
   display: inline-block;
   text-decoration: none;
   margin-top: 50px;
-  color: #232121;
+  color: var(--color-blog);
   font-weight: 600;
   background-color: transparent;
   transition: all 0.5s;
 }
 .erro .icon {
   padding-right: 15px;
-  color: rgb(22 28 45 / 70%);
+  color: var(--card-a);
 }
 .erro a:hover {
   color: #ff6600;
