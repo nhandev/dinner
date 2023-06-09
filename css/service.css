@@ -20,6 +20,14 @@
   --bg-grey: #f7f7f7;
   --footer-bg: #000;
   --card-bg: #fff;
+  --card-a: #161c2db3;
+  --card-b: white;
+  --card-c: #161c2db3;
+  --card-border: #eee;
+  --card-bg: #f7f7f7;
+  --color-blog: black;
+  --color-backgroup: rgb(247 247 247);
+  --color-bg-ip: white;
 }
 [data-theme="dark"] {
   --primary-color: #ff6600;
@@ -36,6 +44,14 @@
   --bg-grey: #282828;
   --card-bg: #888c96;
   --footer-bg: #000;
+  --card-a: white;
+  --card-b: black;
+  --card-c: white;
+  --card-border: rgb(255 255 255 / 10%);
+  --card-bg: #282828;
+  --color-blog: white;
+  --color-backgroup: rgb(40 40 40);
+  --color-bg-ip: #282828;
 }
 a,
 a:hover {
@@ -178,15 +194,15 @@ input:checked + .mode-container i.gg-moon {
   font-size: 18px;
   line-height: 28px;
   font-family: "Quicksand", sans-serif;
-  color: #161c2db3;
+  color: var(--card-a);
 }
 /* sv_option  */
 .sv_opsion .item_bg {
   padding: 30px;
   border-radius: 8px;
-  border: 1px solid #eee;
+  border: 1px solid var(--card-border);
   box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
-  background-color: white;
+  background-color: var(card-b);
 }
 .sv_opsion .item_grid {
   display: grid;
@@ -206,20 +222,21 @@ input:checked + .mode-container i.gg-moon {
 }
 .sv_opsion .infor a {
   text-decoration: none;
-  color: black;
+  color: var(--card-c);
   font-weight: 600;
   font-size: 24px;
   margin-top: 5px;
 }
 .sv_opsion .item_bg p:last-of-type {
   font-size: 18px;
-  color: #161c2db3;
+  color: var(--card-c);
   line-height: 28px;
 }
 .sv_opsion .item:hover i {
   color: white;
   background-color: #ff6600;
 }
+
 /* service_banner  */
 .sv_banner {
   background-image: url(../img/banner2.jpg);
@@ -296,6 +313,12 @@ input:checked + .mode-container i.gg-moon {
   text-align: right;
   color: #ff6600;
   font-weight: 600;
+}
+.sv_blog-post {
+  background-color: var(--card-bg);
+}
+.sv_blog-post h3 {
+  color: var(--color-blog);
 }
 /*------- End Service page ------*/
 
@@ -516,123 +539,123 @@ button#trigger-overlay {
 
 /* Overlay style */
 .overlay {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	z-index: 99999;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99999;
 }
 
 /* Overlay style */
 .overlay {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	overflow-y: scroll;
-	top: 0;
-	left: 0;
-	background: rgb(6 3 0 / 77%);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  top: 0;
+  left: 0;
+  background: rgb(6 3 0 / 77%);
 }
 
 /* Overlay closing cross */
 .overlay .overlay-close {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    right: 40px;
-    top: 40px;
-    overflow: hidden;
-    border: none;
-    background: var(--primary-color);
-    color: #fff;
-    border-radius: var(--border-radius);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  overflow: hidden;
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: var(--border-radius);
 }
 
 button#trigger-overlay {
-	outline: none;
-	border: none;
-	background: none;
-	text-align: center;
-	color: #fbfdfb;
-	font-size: 1.95em;
-	padding: 0 8px;
+  outline: none;
+  border: none;
+  background: none;
+  text-align: center;
+  color: #fbfdfb;
+  font-size: 1.95em;
+  padding: 0 8px;
 }
 
 /* Menu style */
 .overlay nav {
-	text-align: center;
-	position: relative;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .overlay ul {
-	list-style: none;
-	padding: 0;
-	margin: 0 auto;
-	display: inline-block;
-	height: 100%;
-	position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  height: 100%;
+  position: relative;
 }
 .overlay ul li {
-	display: block;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-    line-height:3em;
+  display: block;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  line-height: 3em;
 }
 .overlay ul li a {
-	font-size: 20px;
-	font-weight: 600;
-	display: block;
-	color: #fff;
-	-webkit-transition: color 0.2s;
-	transition: color 0.2s;
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+  color: #fff;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
   line-height: 3em;
 }
 
 .overlay ul li a:hover,
 .overlay ul li a:focus {
-	color:var(--primary-color);
+  color: var(--primary-color);
 }
 
 /* Effects */
 .overlay-scale {
-	visibility: hidden;
-	opacity: 0;
-	-webkit-transform: scale(0.9);
-	transform: scale(0.9);
-	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
-	transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+  transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
 }
 
 .overlay-scale.open {
-	visibility: visible;
-	opacity: 1;
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
-	transition: transform 0.4s, opacity 0.4s;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+  transition: transform 0.4s, opacity 0.4s;
 }
 
 @media screen and (max-height: 30.5em) {
-	.overlay nav {
-		font-size: 34px;
-	}
+  .overlay nav {
+    font-size: 34px;
+  }
 
-	.overlay ul li {
-		line-height: 1.2em;		
-	}
+  .overlay ul li {
+    line-height: 1.2em;
+  }
 }
-@media (max-width:767px) {
-	.overlay ul li a {
-		font-size: 16px;
-	}
+@media (max-width: 767px) {
+  .overlay ul li a {
+    font-size: 16px;
+  }
 }
-@media (max-width:600px) {
-	.overlay ul li a {
-		font-size: 16px;
-	}
+@media (max-width: 600px) {
+  .overlay ul li a {
+    font-size: 16px;
+  }
 }
 /* //Overlay style */
 /*--// Header --- */

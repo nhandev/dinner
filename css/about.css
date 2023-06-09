@@ -39,7 +39,7 @@
 .about_header-center .about_feature .about_right p {
   font-size: 18px;
   line-height: 28px;
-  color: rgb(22 28 45 / 70%);
+  color: var(--car-a);
   padding-right: 80px;
 }
 .about_header-center .about_feature .about_right button {
@@ -71,9 +71,6 @@
   gap: 30px;
   align-items: center;
 }
-.about_header-center .about_Wwd .Wwd_content .title2 {
-  margin-left: -100px;
-}
 .about_header-center .about_Wwd .Wwd_content a {
   color: #ff6600;
   font-weight: 600;
@@ -86,7 +83,7 @@
 /* skill  */
 .about_skills {
   margin-bottom: 50px;
-  background-color: #f7f7f7;
+  background-color: var(--color-backgroup);
 }
 .about_skills .row {
   display: flex;
@@ -95,10 +92,13 @@
 .about_skills .skills_left {
   padding: 0 50px 0 0;
 }
+.about_skills .skills_left .title2 {
+  color: var(--color-blog);
+}
 .about_skills .skills_left p {
   font-size: 18px;
   line-height: 28px;
-  color: rgb(22 28 45 / 70%);
+  color: var(--color-a);
   margin-bottom: 20px;
 }
 .skills_right .skills_image {
@@ -177,7 +177,7 @@
 .about_team .team_people .team_title {
   font-size: 25px;
   font-weight: bold;
-  color: black;
+  color: var(--color-blog);
   transition: all 0.5s;
 }
 .about_team .team_people:hover .team_title {
@@ -357,11 +357,11 @@
 .AboutPageBanner .breadcrumbs-custom-path {
   padding-top: 81px;
   position: relative;
-    vertical-align: middle;
-    font-size: 18px;
-    line-height: 1.5;
-    font-weight: 600;
-    color: #fff;
+  vertical-align: middle;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #fff;
 }
 ul.breadcrumbs-custom-path a {
   color: var(--primary-color);
