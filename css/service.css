@@ -190,6 +190,9 @@ input:checked + .mode-container i.gg-moon {
   font-weight: 600;
 }
 /* sv_about  */
+.sv_about {
+  margin: 50px;
+}
 .sv_about .text_right p {
   font-size: 18px;
   line-height: 28px;
@@ -222,7 +225,7 @@ input:checked + .mode-container i.gg-moon {
 }
 .sv_opsion .infor a {
   text-decoration: none;
-  color: var(--card-c);
+  color: var(--color-blog);
   font-weight: 600;
   font-size: 24px;
   margin-top: 5px;
@@ -239,7 +242,7 @@ input:checked + .mode-container i.gg-moon {
 
 /* service_banner  */
 .sv_banner {
-  background-image: url(../img/banner2.jpg);
+  background-image: url(../img/banner2\ .jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
