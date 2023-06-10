@@ -6,3 +6,5 @@
                                                                              -service
                                                                              -about
                                                                              -fix lỗi
+                                                                             -deploy
+                                                                             -up youtube
