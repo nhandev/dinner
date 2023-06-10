@@ -194,8 +194,8 @@ input:checked + .mode-container i.gg-moon {
   margin: 50px;
 }
 .sv_about .text_right p {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 20px;
+  line-height: 30px;
   font-family: "Quicksand", sans-serif;
   color: var(--card-a);
 }
